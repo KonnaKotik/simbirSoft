@@ -1,12 +1,9 @@
-package main.java.ru.itis.app;
 
-
-import main.java.ru.itis.exam.Exam;
-import main.java.ru.itis.model.teacher.AbstractTeacher;
-import main.java.ru.itis.model.teacher.DBTeacher;
-import main.java.ru.itis.model.teacher.MathTeacher;
-import main.java.ru.itis.model.Student;
-import main.java.ru.itis.model.teacher.Teacher;
+import exam.Exam;
+import model.Student;
+import model.teacher.AbstractTeacher;
+import model.teacher.DBTeacher;
+import model.teacher.MathTeacher;
 
 import java.util.ArrayList;
 
@@ -16,8 +13,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        AbstractTeacher dbTeacher = new DBTeacher(110, "Якупов А. А.");
-        AbstractTeacher mathTeacher = new MathTeacher(98, "Арсланов М.М");
+        AbstractTeacher dbTeacher = new DBTeacher(110, "Якупов", "Алексей", "Владиславович");
+        AbstractTeacher mathTeacher = new MathTeacher(98, "Арсланов", "Марат", "Александрович");
 
         ArrayList<Student> students = new ArrayList<>();
 

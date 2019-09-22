@@ -1,13 +1,10 @@
-package main.java.ru.itis.model;
+package model;
 
-import main.java.ru.itis.util.NameGenerator;
+import util.NameGenerator;
 
 import java.util.Random;
 
 public class Student {
-
-    private static final int MIN_IQ = 71;
-
 
     private Random random = new Random();
 
@@ -15,8 +12,9 @@ public class Student {
     private String lastName;
     private String patronymic;
 
-
     private int iq;
+
+    private static final int MIN_IQ = 71;
 
     public Student() {
         this.firstName = NameGenerator.firstNameGenerate();

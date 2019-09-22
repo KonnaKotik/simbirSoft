@@ -1,4 +1,4 @@
-package main.java.ru.itis.util;
+package util;
 
 import java.util.Random;
 
@@ -6,7 +6,7 @@ public class NameGenerator {
 
     private static Random random = new Random();
 
-    private static   final String[] FIRST_NAMES =
+    private static final String[] FIRST_NAMES =
             {
                     "Арина", "Алиса", "Марина", "Тимур", "Данэль",};
 
@@ -31,8 +31,6 @@ public class NameGenerator {
     public static String patronymicGenerator() {
         return PATRONYMICS[random.nextInt(PATRONYMICS.length)];
     }
-
-
 
 
 }
